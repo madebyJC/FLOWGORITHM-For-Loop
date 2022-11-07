@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-24 07:26:16 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI0OzA3OjA1OjQ5IHBtOzM0Nzc="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI0OzA3OjI2OjE2IHBtOzE7MzU4Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loop, ave, num, numInput" type="Integer" array="False" size=""/>
+            <assign variable="num" expression="0"/>
+            <output expression="&quot;Input the ten numbers simultaneously: &quot;" newline="True"/>
+            <for variable="loop" start="1" end="10" direction="inc" step="1">
+                <input variable="numInput"/>
+                <assign variable="num" expression="num + numInput"/>
+            </for>
+            <assign variable="ave" expression="num / 10"/>
+            <output expression="&quot;The average is: &quot; &amp; ave" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

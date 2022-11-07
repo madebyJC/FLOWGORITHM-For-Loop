@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-26 10:53:22 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI0OzExOjM5OjE3IGFtOzM0NTk="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI2OzEwOjUzOjIyIHBtOzI7MzU3Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numberInput, loopResult" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the starting number: &quot;" newline="True"/>
+            <input variable="numberInput"/>
+            <if expression="numberInput &lt; 0 ||&#13;&#10;numberInput &gt; 50">
+                <then>
+                    <output expression="&quot;Error&quot;" newline="True"/>
+                </then>
+                <else>
+                    <for variable="loopResult" start="numberInput" end="50" direction="inc" step="1">
+                        <output expression="loopResult" newline="True"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

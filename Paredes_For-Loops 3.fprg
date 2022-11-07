@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="JANCARLOPAREDES"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-24 07:30:40 pm"/>
+        <attribute name="created" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI0OzA3OjI3OjM2IHBtOzM0Nzc="/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI0OzA3OjI4OjExIHBtOzE7SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI0OzA3OjA1OjQ5IHBtO1BhcmVkZXNfRm9yLUxvb3BzIDIuZnByZzs5NDAx"/>
+        <attribute name="edited" value="SkFOQ0FSTE9QQVJFREVTO0RFU0tUT1AtNzQ1R1ZOMzsyMDIyLTEwLTI0OzA3OjMwOjQwIHBtOzE7MzU3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loop, num, highestNum" type="Integer" array="False" size=""/>
+            <assign variable="highestNum" expression="0"/>
+            <output expression="&quot;Input the ten numbers simultaneously: &quot;" newline="True"/>
+            <for variable="loop" start="1" end="10" direction="inc" step="1">
+                <input variable="num"/>
+                <if expression="num &gt; highestNum">
+                    <then>
+                        <assign variable="highestNum" expression="num"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;The highest number is: &quot; &amp; highestNum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
